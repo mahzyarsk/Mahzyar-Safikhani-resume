@@ -1,0 +1,137 @@
+
+:root {
+    --primary-color: #008080; 
+    --text-color: #333333;
+    --background-color: #f9f9f9;
+    --card-bg: #ffffff;
+    --border-color: #dddddd;
+}
+
+body {
+    font-family: 'Tahoma', 'Arial', sans-serif; 
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    direction: rtl; 
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2em;
+    color: var(--text-color);
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+address a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+address a:hover {
+    color: #005f5f; 
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 35px;
+    padding-right: 15px; 
+    border-right: 4px solid rgba(0, 128, 128, 0.2); 
+}
+
+section h2 {
+    color: var(--primary-color);
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+article:hover {
+    background-color: #cfdeec;
+}
+
+article h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+article p {
+    margin: 5px 0;
+    line-height: 1.7;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+#skills li {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px; 
+    font-size: 0.95em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+    }
+
+   
+    #skills ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #skills li {
+        width: 100%; 
+        text-align: center;
+    }
+}
